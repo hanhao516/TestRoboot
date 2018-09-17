@@ -20,12 +20,12 @@ public class BinanceController extends Controller{
             }
         }
         String changKey = getPara("symbol");
-        String timeKey = getPara("interval");
-        String count = getPara("limit");
+//        String timeKey = getPara("interval");
+//        String count = getPara("limit");
 
         IMarketRestApi marketRestApi = new MarketRestApi();
         // 获取K线数据
-        String ret = marketRestApi.Binancekline(changKey, timeKey, count);
+        String ret = marketRestApi.Binancekline(changKey);
         renderJson(JSON.parseObject(ret));
     }
 }

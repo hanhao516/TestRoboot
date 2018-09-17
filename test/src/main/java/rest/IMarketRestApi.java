@@ -18,7 +18,7 @@ public interface IMarketRestApi {
 	 */
 	public String kline(String symbol, String period, String size) throws HttpException, IOException;
 
-	public String Binancekline(String symbol, String interval, String size) throws HttpException, IOException;
+	public String Binancekline(String symbol) throws HttpException, IOException;
 
 	public String hadaxKLine(String symbol, String period, String size) throws HttpException, IOException;
 	/**

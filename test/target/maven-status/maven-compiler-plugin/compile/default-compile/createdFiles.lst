@@ -6,6 +6,7 @@ rest\IV1RestApi.class
 control\ZBApiController.class
 control\OkexApiController.class
 rest\IMarketRestApi.class
+control\CexController.class
 util\HttpClientUtil.class
 control\maintest.class
 util\HttpUtilManager.class

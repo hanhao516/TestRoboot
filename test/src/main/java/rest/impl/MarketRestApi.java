@@ -36,14 +36,14 @@ public class MarketRestApi implements IMarketRestApi {
 		return httpUtil.requestHttpGet(CEX_URL, "/api/v1/ticker.do", paramMap);
 	}
 
-	public String Binancekline(String symbol, String interval, String size) throws HttpException, IOException {
+	public String Binancekline(String symbol) throws HttpException, IOException {
 		HttpUtilManager httpUtil = HttpUtilManager.getInstance();
 		Map<String, String> paramMap = new HashMap<String, String>();
 		paramMap.put("symbol", symbol);
-		paramMap.put("interval", interval);
-		paramMap.put("limit", size);
+//		paramMap.put("interval", interval);
+//		paramMap.put("limit", size);
 
-		return httpUtil.requestHttpGet(BINANCE_URL, "/api/v1/klines", paramMap);
+		return httpUtil.requestHttpGet(BINANCE_URL, "/api/v1/ticker/24hr", paramMap);
 	}
 
 	public String hadaxKLine(String symbol, String period, String size) throws HttpException, IOException {
