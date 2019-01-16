@@ -21,6 +21,7 @@ public class DemoConfig extends JFinalConfig{
 			me.add("zb", ZBApiController.class);
 			me.add("/binance", BinanceController.class);
 			me.add("/cex", CexController.class);
+			me.add("/tokenView", TokenViewController.class);
 	    }
 	    public void configEngine(Engine me) {}
 	    public void configPlugin(Plugins me) {
